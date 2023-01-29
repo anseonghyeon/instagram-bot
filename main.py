@@ -22,13 +22,15 @@ print('로그인 진행중...')
 btn= driver.find_elements(By.TAG_NAME,'button')[1]
 btn.click()
 # 아이디 입력
+id = 'anseonghyeon@naver.com'
 inputbox = driver.find_elements(By.TAG_NAME,'input')[0]
 inputbox.click()
-inputbox.send_keys('anseonghyeon@naver.com')
+inputbox.send_keys(id)
 # 비밀번호 입력
+pw = 'ash0927@'
 inputbox = driver.find_elements(By.TAG_NAME,'input')[1]
 inputbox.click()
-inputbox.send_keys('ash0927@')
+inputbox.send_keys(pw)
 # 엔터 입력
 inputbox.send_keys(Keys.ENTER)
 time.sleep(10)
